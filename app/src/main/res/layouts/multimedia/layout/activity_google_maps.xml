@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".multimedia.GoogleMapsActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <fragment
+            android:id="@+id/userMap"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="381dp"
+            android:layout_height="470dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.489"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout="@android:layout/test_list_item" />
+
+        <Button
+            android:id="@+id/btnGetLocation"
+            android:layout_width="180dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:onClick="getLocation"
+            android:text="Your Location"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/userMap" />
+
+        <Button
+            android:id="@+id/btnFiapLocation"
+            android:layout_width="180dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:onClick="getFiapLocation"
+            android:text="FIAP Location"
+            app:layout_constraintStart_toEndOf="@+id/btnGetLocation"
+            app:layout_constraintTop_toBottomOf="@+id/userMap" />
+
+        <Button
+            android:id="@+id/btnGetDirection"
+            android:layout_width="180dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:onClick="getFiapDirections"
+            android:text="FIAP Directions"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnFiapLocation" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

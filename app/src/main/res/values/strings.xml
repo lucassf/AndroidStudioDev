@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Android Course</string>
+    <string-array name="greetings">
+        <item>Mr</item>
+        <item>Ms</item>
+        <item>Dr</item>
+        <item>Dra</item>
+        <item>None</item>
+    </string-array>
+</resources>
