@@ -49,16 +49,9 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".FrameLayoutActivity"
+            android:name=".RetrofitLayoutActivity"
             android:exported="false"
             android:parentActivityName=".MainActivity">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".ConstraintLayoutActivity"
-            android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />

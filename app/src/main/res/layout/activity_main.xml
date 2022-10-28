@@ -43,16 +43,6 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/btnFrameLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="70dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="70dp"
-        android:text="Constraint Layout"
-        android:textSize="20dp" />
-
-    <Button
         android:id="@+id/btnMultimedia"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

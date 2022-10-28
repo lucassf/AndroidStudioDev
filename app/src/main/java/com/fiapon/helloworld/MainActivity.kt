@@ -13,11 +13,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         Log.i("onCreate", "onCreate function")
 
-        val frameLayoutButton: Button = findViewById(R.id.btnFrameLayout)
-        frameLayoutButton.setOnClickListener {
-            startConstraintLayout()
-        }
-
         val saveGreetButton: Button = findViewById(R.id.btnSaveGreet)
         saveGreetButton.setOnClickListener {
             saveGreet()
@@ -34,11 +29,6 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun startConstraintLayout() {
-        val intent = Intent(this, ConstraintLayoutActivity::class.java)
-        startActivity(intent)
-    }
-
     private fun saveGreet() {
         val greetDict = this.getSharedPreferences("greeting", Context.MODE_PRIVATE)
         val editor = greetDict.edit()
@@ -53,7 +43,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showGreet() {
-        val intent = Intent(this, FrameLayoutActivity::class.java)
+        val intent = Intent(this, RetrofitLayoutActivity::class.java)
         startActivity(intent)
     }
 
