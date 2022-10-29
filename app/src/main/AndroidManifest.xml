@@ -17,6 +17,13 @@
         android:theme="@style/Theme.HelloWorld"
         tools:targetApi="31">
         <activity
+            android:name=".NotificationActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".multimedia.GoogleMapsActivity"
             android:exported="false"
             android:parentActivityName=".MultimediaActivity">
